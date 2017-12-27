@@ -1,0 +1,31 @@
+{
+  "services": [
+    {
+      "address": "127.0.0.1",
+      "id": "dn0",
+      "name": "gateway",
+      "port": 5000,
+      "tags": [
+        "gateway resolver"
+      ]
+    },
+    {
+      "address": "127.0.0.1",
+      "id": "dn1",
+      "name": "go-svc-1",
+      "port": 8082,
+      "tags": [
+        "Golang service discovery"
+      ]
+    },
+    {
+      "address": "127.0.0.1",
+      "id": "dn2",
+      "name": "node-svc-1",
+      "port": 3000,
+      "tags": [
+        "Node service discover"
+      ]
+    }
+  ]
+}
