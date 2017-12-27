@@ -46,6 +46,10 @@ and check you're file at `/etc/resolv.conf`, register nameserver localhost like 
 
     $ nameserver 127.0.0.1
 
+and you must set on `kong.conf` at line `dns_resolver` like this:
+
+    $ dns_resolver: 127.0.0.1:8600 // consul host & port 
+    
 and register the name of `consul` ns as `upstream_url` on kong api like this : 
 
     $ curl -i -X POST \
