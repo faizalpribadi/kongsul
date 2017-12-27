@@ -53,3 +53,9 @@ and register the name of `consul` ns as `upstream_url` on kong api like this :
         --data 'name=your-api' \
         --data 'hosts=your-api.com' \
         --data 'upstream_url=http://go-svc-1.service.consul'
+
+Testing `Kong api` and `Consul Service Discovery` Working Great Together:
+
+    $ curl -i -X GET \
+        --url http://localhost:8000/ \
+        --header 'Host: your-api.com'
